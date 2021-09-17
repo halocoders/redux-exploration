@@ -53,3 +53,9 @@ body {
 .li-item.work .box-item {
   background: #f8497c;
 }
+
+.ant-select-selector {
+  height: 36px !important;
+  align-items: center;
+  border-radius: 999px !important;
+}
