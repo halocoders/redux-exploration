@@ -59,3 +59,8 @@ body {
   align-items: center;
   border-radius: 999px !important;
 }
+
+.ant-modal-content {
+  border-radius: 20px !important;
+  overflow: hidden;
+}

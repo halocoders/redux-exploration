@@ -1,5 +1,5 @@
 import React from 'react';
-import { Add } from './Add';
+import { Add } from './Add/Add';
 import { Category } from './Category';
 import { Header } from './Header';
 import { List } from './List';
