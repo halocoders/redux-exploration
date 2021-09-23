@@ -14,3 +14,7 @@
 #demo-simple-select-helper {
   padding: 9.5px 14px !important;
 }
+
+.MuiBox-root {
+  border-radius: 20px;
+}
