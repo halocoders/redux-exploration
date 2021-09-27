@@ -1,4 +1,7 @@
 import React from 'react';
+import { useDispatch } from 'react-redux';
+import { deleteTodo } from '../../redux/action';
+
 import Backdrop from '@mui/material/Backdrop';
 import Box from '@mui/material/Box';
 import Modal from '@mui/material/Modal';
@@ -17,7 +20,14 @@ const style = {
   p: 4,
 };
 
-export const ItemModal = ({ open, handleClose }) => {
+export const ItemDelete = ({ open, handleClose, data }) => {
+  const dispatch = useDispatch();
+
+  const handleDelete = () => {
+    dispatch(deleteTodo(data.id));
+
+    handleClose();
+  };
   return (
     <Modal
       aria-labelledby="transition-modal-title"
@@ -33,16 +43,14 @@ export const ItemModal = ({ open, handleClose }) => {
       <Fade in={open}>
         <Box sx={style}>
           <Typography id="transition-modal-title" variant="h6" component="h2">
-            Text in a modal
+            Are you sure to delete this todo?
           </Typography>
           <Typography id="transition-modal-description" sx={{ mt: 2 }}>
-            Duis mollis, est non commodo luctus, nisi erat porttitor ligula.
+            {data.title}
           </Typography>
           <div className="mt-6">
-            <Button variant="contained" onClick={handleClose}>
-              Close
-            </Button>
-            <Button onClick={handleClose}>Edit</Button>
+            <Button onClick={handleClose}>No</Button>
+            <Button onClick={handleDelete}>Yes</Button>
           </div>
         </Box>
       </Fade>

@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { ItemList } from './ItemList';
+import { ItemList } from './Item/ItemList';
 
 export const List = () => {
   const todos = useSelector((state) => state.todos);

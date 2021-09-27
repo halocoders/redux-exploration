@@ -9,14 +9,11 @@ const todos = [
 ];
 
 const todoReducer = (state = todos, action) => {
-  let newTodos = [];
   switch (action.type) {
     case types.ADD_TODO:
       return [...state, action.payload];
     case types.DELETE_TODO:
-      newTodos = [...state];
-      newTodos = newTodos.filter((item) => item.id !== action.payload);
-      return newTodos;
+      return (state = state.filter((item) => item.id !== action.payload));
     default:
       return state;
   }

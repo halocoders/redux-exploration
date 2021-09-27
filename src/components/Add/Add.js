@@ -57,7 +57,7 @@ export const Add = () => {
         <input
           required
           type="text"
-          className="text-xl py-4 pl-9 pr-28 font-normal rounded-full focus:outline-none w-full shadow-lg"
+          className="text-xl py-4 pl-9 pr-36 font-normal rounded-full focus:outline-none w-full shadow-lg"
           placeholder="Add your todo..."
           value={title}
           onChange={(e) => setTitle(e.target.value)}
