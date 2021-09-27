@@ -1,0 +1,66 @@
+/* ./src/index.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: 'Poppins', sans-serif;
+  background: #001e3c;
+}
+
+.category li div {
+  background: #31608f;
+  transition: all 200ms ease-in-out;
+}
+
+/* active */
+.category li.active {
+  background: #0e2237;
+}
+.category li.active .box {
+  background: #17c3a6;
+}
+.category li.active a {
+  color: #a5d8ff;
+  font-weight: 600;
+}
+
+.category li:hover {
+  background: #0e2237;
+}
+.category li:nth-child(2):hover .box {
+  background: #f8497c;
+}
+.category li:nth-child(3):hover .box {
+  background: #ffb643;
+}
+
+.li-item {
+  background: #10355a;
+  border-radius: 20px;
+  font-weight: 300;
+}
+
+.li-item .box-item {
+  background: #31608f;
+}
+.li-item.important .box-item {
+  background: #17c3a6;
+}
+.li-item.personal .box-item {
+  background: #ffb643;
+}
+.li-item.work .box-item {
+  background: #f8497c;
+}
+
+.ant-select-selector {
+  height: 36px !important;
+  align-items: center;
+  border-radius: 999px !important;
+}
+
+.ant-modal-content {
+  border-radius: 20px !important;
+  overflow: hidden;
+}

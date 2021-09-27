@@ -1,0 +1,20 @@
+.MuiInputLabel-root {
+  top: -6px !important;
+}
+.MuiInputLabel-root.MuiInputLabel-shrink {
+  top: inherit !important;
+}
+.MuiFormControl-root {
+  position: absolute !important;
+  right: 14px;
+}
+.MuiOutlinedInput-root.MuiInputBase-root {
+  border-radius: 999px !important;
+}
+#demo-simple-select-helper {
+  padding: 9.5px 14px !important;
+}
+
+.MuiBox-root {
+  border-radius: 20px;
+}
