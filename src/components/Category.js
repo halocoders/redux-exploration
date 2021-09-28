@@ -5,30 +5,33 @@ export const Category = () => {
   return (
     <section className="w-2/6 category">
       <ul className="py-9 px-6 rounded-3xl" style={{ background: '#10355A' }}>
-        <li className="active flex items-center gap-3 py-3 px-5 rounded-lg mb-2 transition-all">
+        <li className="all active flex items-center gap-3 py-3 px-5 rounded-lg mb-2 transition-all">
           <div className="h-4 w-4 rounded box"></div>
           <Link
             to="/"
-            className="font-semibold text-lg tracking-wide cursor-default"
+            className="font-semibold text-lg tracking-wide text-white"
+          >
+            All
+          </Link>
+        </li>
+        <li className="important active flex items-center gap-3 py-3 px-5 rounded-lg mb-2 transition-all">
+          <div className="h-4 w-4 rounded box"></div>
+          <Link
+            to="/category/important"
+            className="font-semibold text-lg tracking-wide text-white"
           >
             Puenting
           </Link>
         </li>
-        <li className="flex items-center gap-3 py-3 px-5 rounded-lg mb-2 transition-all">
+        <li className="personal flex items-center gap-3 py-3 px-5 rounded-lg mb-2 transition-all">
           <div className="h-4 w-4 rounded box"></div>
-          <Link
-            to="/"
-            className="text-lg tracking-wide text-white cursor-default"
-          >
+          <Link to="/" className="text-lg tracking-wide text-white">
             Personal
           </Link>
         </li>
-        <li className="flex items-center gap-3 py-3 px-5 rounded-lg transition-all">
+        <li className="work flex items-center gap-3 py-3 px-5 rounded-lg transition-all">
           <div className="h-4 w-4 rounded box"></div>
-          <Link
-            to="/"
-            className="text-lg tracking-wide text-white cursor-default"
-          >
+          <Link to="/" className="text-lg tracking-wide text-white">
             Work
           </Link>
         </li>
