@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { editTodo } from '../../redux/action';
 
 import Backdrop from '@mui/material/Backdrop';
 import Box from '@mui/material/Box';
@@ -24,15 +26,23 @@ const style = {
 };
 
 export const ItemEdit = ({ handleClose, open, data }) => {
-  const [title, setTitle] = useState('');
-  const [status, setStatus] = useState('');
+  const [title, setTitle] = useState(data.title);
+  const [status, setStatus] = useState(data.status);
 
   const handleStatus = (event) => {
     setStatus(event.target.value);
   };
+
+  const dispatch = useDispatch();
+
   const handleEdit = () => {
-    console.log(title);
-    console.log(status);
+    dispatch(
+      editTodo({
+        id: data.id,
+        title: title,
+        status: status,
+      })
+    );
 
     handleClose();
   };

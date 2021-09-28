@@ -13,3 +13,14 @@ export const deleteTodo = (todoId) => {
     payload: todoId,
   };
 };
+
+export const editTodo = ({ id, title, status }) => {
+  return {
+    type: types.EDIT_TODO,
+    payload: {
+      id: id,
+      title: title,
+      status: status,
+    },
+  };
+};
