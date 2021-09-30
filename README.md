@@ -2,7 +2,7 @@
 
 ### Todo App
 
-[Repo](https://github.com/priopambudi/redux-exploration) | [Preview](https://todoapp-halocoders.herokuapp.com/)
+[Repo](https://github.com/priopambudi/redux-exploration) | [Preview](https://todo-halocoders.herokuapp.com/)
 
 - Tech: ReactJS, Redux, MaterialUI, Tailwind
 - Feature: Filter, Add, Edit, Delete

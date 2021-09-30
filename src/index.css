@@ -14,16 +14,18 @@ body {
 }
 
 /* active */
-/* .category li.active {
+.category li.active {
   background: #0e2237;
 }
-.category li.active .box {
+.category li.active.important .box {
   background: #17c3a6;
 }
-.category li.active a {
-  color: #a5d8ff;
-  font-weight: 600;
-} */
+.category li.active.personal .box {
+  background: #ffb643;
+}
+.category li.active.work .box {
+  background: #f8497c;
+}
 
 .category li.all .box {
   background: #31608f;

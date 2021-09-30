@@ -15,11 +15,6 @@ const todoReducer = (state = todos, action) => {
     case types.DELETE_TODO:
       return (state = state.filter((item) => item.id !== action.payload));
     case types.EDIT_TODO:
-      // return state.map((item) =>
-      //   item.id === action.payload.id
-      //     ? Object.assign(item, action.payload)
-      //     : item
-      // );
       return state.map((item) =>
         item.id === action.payload.id ? { ...item, ...action.payload } : item
       );
